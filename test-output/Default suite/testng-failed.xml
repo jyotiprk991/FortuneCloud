@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Scenario_Component.company_profile">
+      <class name="Scenario_Component.FC_001_companyProfile">
         <methods>
           <include name="Report_extent"/>
-          <include name="test_case1"/>
-          <include name="test_Case1"/>
+          <include name="primary_check"/>
+          <include name="Onload_Load_Check"/>
         </methods>
-      </class> <!-- Scenario_Component.company_profile -->
+      </class> <!-- Scenario_Component.FC_001_companyProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

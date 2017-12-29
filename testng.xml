@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Scenario_Component.TC_1"/>
+      <class name="Scenario_Component.FC_001_companyProfile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

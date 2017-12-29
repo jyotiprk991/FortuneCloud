@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39279" started-at="2017-12-18T10:33:19Z" finished-at="2017-12-18T10:33:59Z">
+  <suite name="Default suite" duration-ms="38759" started-at="2017-12-29T12:50:48Z" finished-at="2017-12-29T12:51:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39279" started-at="2017-12-18T10:33:19Z" finished-at="2017-12-18T10:33:59Z">
-      <class name="Scenario_Component.company_profile">
-        <test-method status="PASS" signature="Report_extent()[pri:0, instance:Scenario_Component.company_profile@598067a5]" name="Report_extent" is-config="true" duration-ms="264" started-at="2017-12-18T16:03:19Z" finished-at="2017-12-18T16:03:19Z">
+    <test name="Default test" duration-ms="38759" started-at="2017-12-29T12:50:48Z" finished-at="2017-12-29T12:51:26Z">
+      <class name="Scenario_Component.FC_001_companyProfile">
+        <test-method status="PASS" signature="Report_extent()[pri:0, instance:Scenario_Component.FC_001_companyProfile@553f17c]" name="Report_extent" is-config="true" duration-ms="232" started-at="2017-12-29T18:20:47Z" finished-at="2017-12-29T18:20:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report_extent -->
-        <test-method status="FAIL" signature="test_Case1()[pri:0, instance:Scenario_Component.company_profile@598067a5]" name="test_Case1" is-config="true" duration-ms="0" started-at="2017-12-18T16:03:19Z" finished-at="2017-12-18T16:03:19Z">
+        <test-method status="PASS" signature="primary_check()[pri:0, instance:Scenario_Component.FC_001_companyProfile@553f17c]" name="primary_check" is-config="true" duration-ms="37933" started-at="2017-12-29T18:20:48Z" finished-at="2017-12-29T18:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- primary_check -->
+        <test-method status="PASS" signature="Onload_Load_Check()[pri:0, instance:Scenario_Component.FC_001_companyProfile@553f17c]" name="Onload_Load_Check" duration-ms="784" started-at="2017-12-29T18:21:26Z" finished-at="2017-12-29T18:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Onload_Load_Check -->
+        <test-method status="FAIL" signature="stop_process()[pri:0, instance:Scenario_Component.FC_001_companyProfile@553f17c]" name="stop_process" is-config="true" duration-ms="0" started-at="2017-12-29T18:21:26Z" finished-at="2017-12-29T18:21:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -21,7 +29,7 @@ null]]>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
 null
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
-	at Scenario_Component.Primary_tests.test_Case1(Primary_tests.java:50)
+	at Scenario_Component.FC_001_companyProfile.stop_process(FC_001_companyProfile.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -30,8 +38,8 @@ null
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1021)
+	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
@@ -49,12 +57,8 @@ null
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_Case1 -->
-        <test-method status="SKIP" signature="test_case1()[pri:0, instance:Scenario_Component.company_profile@598067a5]" name="test_case1" duration-ms="2" started-at="2017-12-18T16:03:59Z" finished-at="2017-12-18T16:03:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_case1 -->
-      </class> <!-- Scenario_Component.company_profile -->
+        </test-method> <!-- stop_process -->
+      </class> <!-- Scenario_Component.FC_001_companyProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

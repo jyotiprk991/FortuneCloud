@@ -20,17 +20,12 @@ public class ExcelReadWrite {
 		
 		//workbook object
 		 wb= new HSSFWorkbook(fis);
-		
 	}
-	
-	
 	public HSSFSheet Setsheet(String sheetname)
 	{
 		HSSFSheet Sheet = wb.getSheet(sheetname);
-		return Sheet;
-		
+		return Sheet;	
 	}
-	
 	
 	public int getrowcount(HSSFSheet Sheet)
 	{
@@ -108,11 +103,7 @@ public class ExcelReadWrite {
 				colindex=i;
 		}
 		
-
 		writecell(Sheet,rowIndex,colindex, wvalue );
-		
-		
-		
 		
 	}
 	
@@ -125,6 +116,4 @@ public class ExcelReadWrite {
 		fos.close();
 		
 	}
-	
-
 }

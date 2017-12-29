@@ -1,6 +1,8 @@
 package PageObject_Component;
 
 import java.io.IOException;
+import java.sql.SQLException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,8 +10,12 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import Generic_Component.base_Class;
+import database_connection.FC_DataBaseConnnection;
 
-public class pageObject_Login extends base_Class {
+public class pageObject_Login extends base_Class 
+{
+	
+	FC_DataBaseConnnection ud = new FC_DataBaseConnnection();
 
 //	By onload_check_img = By.xpath(".//*[@id='side-menu']/div/main/section/app-login/div/div[2]/div/div/img");
 //	By log_in = By.xpath(".//*[@id='md-input-0-input']");
@@ -47,8 +53,6 @@ public class pageObject_Login extends base_Class {
 	@FindBy(xpath=".//*[@id='side-menu']/div[1]/div[2]/header/div[1]/div[2]/div[1]")
 	public WebElement Check_point_configuation;
 	
-	
-	
 //	public pageObject_Login(WebDriver driver)
 //	{
 //		this.driver = driver;
@@ -58,18 +62,29 @@ public class pageObject_Login extends base_Class {
 			{
 				PageFactory.initElements(driver, this);
 			}	
-	public void Enter_login() throws IOException
+	public void Enter_login() throws IOException, SQLException
 	{
 		call_property_file();
 		log_in.click();
-		log_in.sendKeys(prop.getProperty("login"));
+		//log_in.sendKeys(prop.getProperty("login"));
+		
+//		String[] part = FC_DataBaseConnnection.GET_UID().split("-");
+//		String userName=part[0];
+		
+		
+		log_in.sendKeys(FC_DataBaseConnnection.GET_UID());
+		
 		
 	}
-	public void Enter_pass() throws IOException
+	public void Enter_pass() throws IOException, SQLException
 	{
 		call_property_file();
 		password.clear();
-		password.sendKeys(prop.getProperty("password"));
+		//password.sendKeys(prop.getProperty("password"));
+//		String[] part = FC_DataBaseConnnection.GET_UID().split("-");
+//		String pass_word =part[1]; 
+		
+		password.sendKeys(FC_DataBaseConnnection.GET_PASS());
 	}
 	
 	public void Click_login() throws IOException
@@ -87,7 +102,5 @@ public class pageObject_Login extends base_Class {
 		Front_office.click();
 		configuration.click();
 	}
-	
-
 
 }

@@ -82,8 +82,5 @@ public class base_Class {
 			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screenshotAs, new File("D:\\outputs\\screenshots\\"+tc+"-"+"-"+file));
 			
-//			String path="D:\\outputs\\screenshots\\"+"TC"+"-"+"-"+file;
-//			return path;
 		}
-	
 }
